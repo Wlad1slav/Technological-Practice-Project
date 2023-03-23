@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpel1 - Your Premier Vehicle Transportation Partner</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="myscript.js"></script>
+</head>
+<body>
+    <img src="i/Xpel1-logo.png" alt="Xpel1-logo">
+    <h1>Trustworthy and Reliable Car Transport Solutions Across the United States</h1>
+    <p>Xpel1 Auto Transport is a company that specializes in moving your vehicle to the place you want it to go. We transport cars, motorcycles, trucks, and much more all over the continental US.</p>
+    <p>We offer free estimates and will work with you to find the best rate for your vehicle. We have a strong commitment to quality service because we know that when you’re looking for auto transport services, you want everything to go smoothly.</p>
+    <p>Our goal is to provide an excellent experience from start to finish so that you can focus on what matters most—getting your vehicle where it needs to be without worrying about how it will get there!</p>
+    
+    <div class="quote-block">
+        <p class=".quote-text">Awesome company, super easy to work with! Seems like they’ve simplified the process so much, it took me only 3 phone calls in total to have my car picked up in New Jersey and delivered in Arizona. Super fast and easy, 100% recommend these guys!</p>
+        <p class=".quote-author"><b>– David, XPel1 customer since 2020 –</b></p>
+        <img src="i/satisfied-customer.jpg" alt="Satisfied customer photo">
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="list">
+            <h2>Our Services</h2>
+            <ul>
+                <li><a href="https://xpel1.storepundit.com/car-delivery-from-dealership-in-the-usa/">Relocation:</a> Efficiently manage your inventory with our professional relocation services designed to meet your unique needs.</li>
+                <li><a href="https://xpel1.storepundit.com/open-enclosed-auto-transportation/">Open/Enclosed Transportation:</a> Choose from our flexible open or enclosed transportation options to ensure the utmost protection for your vehicles during transit.</li>
+                <li><a href="https://xpel1.storepundit.com/services-auction-shipping/">Auction Delivery Services:</a> Seamless and timely delivery of auctioned vehicles from auction houses to your desired location.</li>
+                <li><a href="https://xpel1.storepundit.com/door-to-door-car-transport-usa/">Door-to-Door Services:</a> Experience the convenience of our door-to-door pick-up and delivery services, ensuring a hassle-free vehicle transportation experience.</li>
+                <li><a href="https://xpel1.storepundit.com/expedited-transportation-usa-expedited-delivery-service/">Expedited Delivery Services:</a> Need your vehicle delivered quickly? Our expedited delivery services guarantee fast and secure transport, even on tight deadlines.</li>
+            </ul>
+        </div>
+        <div class="list">
+            <h2>Transportation Modes</h2>
+            <ul>
+                <li><a href="https://xpel1.storepundit.com/classic-car-transport-usa-exotic-car-transport/">Classic/Exotic Cars:</a> Trust our experienced team to safely transport your valuable classic or exotic cars with the highest level of care and professionalism.</li>
+                <li><a href="https://xpel1.storepundit.com/commercial-transport-usa-fleet-delivery-service-xpel1/">Commercial Transport Delivery:</a> Streamline your business operations with our reliable commercial vehicle transport solutions, catering to all sizes of fleets.</li>
+                <li><a href="https://xpel1.storepundit.com/transporting-trucks-usa-commercial-truck-shipping/">Heavy Duty Commercial Transport:</a> Move your heavy-duty commercial vehicles with ease, thanks to our specialized transport services.</li>
+                <li><a href="https://xpel1.storepundit.com/bike-motorcycle-shipping-usa-motorcycle-transportation-service/">Motorcycles/Dirt Bikes:</a> Safely transport your motorcycles and dirt bikes with our dedicated and secure transportation options.</li>
+                <li><a href="https://xpel1.storepundit.com/military-pcs-vehicle-shipping-usa-service/">Military Vehicles:</a> Rely on our expertise in handling and transporting military vehicles, ensuring compliance with all regulations and requirements.</li>
+                <li><a href="https://xpel1.storepundit.com/rv-shipping-usa-rv-transport-service-xpel1/">RVs Transportation:</a> Make your RV relocation a breeze with our specialized services tailored to meet the unique needs of recreational vehicles.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="collage">
+        <img src="i/collage/classic-car2.png">
+        <img src="i/collage/commercial-transport3-1.png">
+        <img src="i/collage/military-vehicle5.png">
+        <img src="i/collage/Heavy-Duty-2.png">
+        <img src="i/collage/motorcycle2.png">
+        <img src="i/collage/RV5.png">
+    </div>      
+
+    <hr>
+
+    <div class="container">
+        <div class="list">
+            <h2>Contact Us</h2>
+            <p>Have any questions or concerns? We're here to help! Get in touch with our friendly and knowledgeable customer support team for assistance.</p>
+            <p><b>Monday-Friday: 6 AM – 5 PM PST</b></p>
+            <p>3720 Madison Ave., North Highlands, CA 95660</p>
+            <p>Phone: 775-800-8585</p>
+            <p>Gmail: info@xpel1.com</p>
+            <a href="tel:775-800-8585"><button class="button">Contact Us</button></a>
+        </div>
+        <div class="list">
+            <h2>Request a Quote</h2>
+            <p>Ready to experience the XPel1 difference? Click the button below to request a personalized quote for your vehicle transportation needs. Our team will get back to you with a competitive estimate in no time.</p>
+            <a href="https://xpel1.storepundit.com/free-quote-first-step-form/"><button class="button" >Get Your Free Quote Now </button></a>
+        </div>
+    </div>
+
+    <hr>
+
+</body>
+
+<script>
+    /* Коладж транспорта */
+    // Перемішує порядок зображень
+    const collage = document.querySelector('.collage');
+    for (let i = collage.children.length; i >= 0; i--) {
+        collage.appendChild(collage.children[Math.random() * i | 0]);
+    }
+    // Додає ефект наведення до зображень
+    const images = document.querySelectorAll('.collage img');
+    images.forEach(image => {
+        image.addEventListener('mouseover', () => {
+            image.style.transform = 'scale(1.1)';
+            image.style.transition = 'transform 0.3s ease';
+        });
+        image.addEventListener('mouseout', () => {
+            image.style.transform = 'scale(1)';
+            image.style.transition = 'transform 0.3s ease';
+        });
+    });
+</script>
+
+</html>
